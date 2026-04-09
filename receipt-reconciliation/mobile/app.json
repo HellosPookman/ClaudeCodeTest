@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Receipt Reconciliation",
+    "slug": "receipt-reconciliation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#1d4ed8"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.company.receiptreconciliation",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to capture receipt photos for reconciliation.",
+        "NSPhotoLibraryUsageDescription": "Used to select receipt images from your library."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1d4ed8"
+      },
+      "package": "com.company.receiptreconciliation",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      "expo-image-picker",
+      "expo-secure-store"
+    ],
+    "scheme": "receipt-recon",
+    "extra": {
+      "apiUrl": "http://localhost:8000"
+    }
+  }
+}
